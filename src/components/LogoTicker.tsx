@@ -4,6 +4,7 @@ import echoLogo from "../assets/images/echo.png";
 import celestialLogo from "../assets/images/celestial.png";
 import pulseLogo from "../assets/images/pulse.png";
 import apexLogo from "../assets/images/apex.png";
+import Image from "next/image";
 
 const images = [
   { src: acmeLogo, alt: "Acme Logo" },
@@ -15,5 +16,18 @@ const images = [
 ];
 
 export const LogoTicker = () => {
-  return null;
+  return (<div className="bg-black text-white py-[72px] ">
+    <div className="container">
+      <h2 className="text-center text-xl text-white/70 ">
+        Trusted by the world's most innovative teams
+      </h2>
+      <div className="overflow-hidden mt-9 before:content-[''] after:content-[''] before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-5 before:left-0 after:right-0 relative before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]">
+        <div className="flex gap-16 justify-center ">
+          {images.map((item, index) => (
+            <Image key={index} src={item.src} alt='item.alt' className="flex-none h-8 w-auto"  />)
+          )}
+        </div>
+      </div>
+    </div>
+  </div>)
 };

@@ -5,7 +5,7 @@ import messageImage from '../assets/images/message.png';
 
 export const Hero = () => {
   return (<div className="bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-clip">
-    <div className='absolute bg-black h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] rounded-[100%] lg:h-[1200px] lg:w-[3000px] left-1/2 -translate-x-1/2 border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]'></div>
+    {/* <div className='absolute bg-black h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] rounded-[100%] lg:h-[1200px] lg:w-[3000px] left-1/2 -translate-x-1/2 border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]'></div> */}
     <div className="container relative">
       <div className="flex items-center justify-center">
         <a href="" className="border py-1 px-2 rounded-lg border-white/30 inline-flex gap-2">
@@ -33,7 +33,7 @@ export const Hero = () => {
         </p>
       </div>
       <div className='flex justify-center mt-8'>
-        <button className='bg-white text-black py-3 px-5 rounded-lg font-medium lg:text-xl hover:scale-105 transition-all ease-in-out'>
+        <button className='bg-white text-black py-3 px-5 rounded-lg font-medium hover:scale-105 transition-all ease-in-out'>
           Get for free
         </button>
       </div>
