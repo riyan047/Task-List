@@ -11,8 +11,20 @@ const config: Config = {
       container: {
         padding: '1rem', 
         center: true,
-      }
+      },
+      backgroundSize: {
+        '200': '200% 100%',
+      },
+      animation: {
+        'slide-bg': 'slide-bg 4s linear infinite',
+      },
+      keyframes: {
+        'slide-bg': {
+          '0%': { backgroundPosition: '0% 0%' },
+          '100%': { backgroundPosition: '200% 0%' },
+        }
     },
+  },
   },
   plugins: [],
 };
