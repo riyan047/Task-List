@@ -2,7 +2,7 @@ import Image from "next/image";
 import appScreen from '../assets/images/app-screen.png'
 export const ProductShowcase = () => {
   return (
-    <div className="bg-black text-white bg-gradient-to-b from-black to-[#4C248A_34%] py-[72px] sm:py-24">
+    <div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8_34%] py-[72px] sm:py-24">
       <div className="container">
         <h2 className="text-center text-5xl sm:text-6xl tracking-tighter font-bold">Intuitive interface</h2>
         <div className="max-w-xl mx-auto">
