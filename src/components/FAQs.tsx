@@ -58,7 +58,7 @@ export const FAQs = () => {
         <h2 className='text-center text-5xl sm:text-6xl sm:max-w-[648px] mx-auto tracking-tighter font-bold'>Frequently asked questions</h2>
         <div className='mt-12 max-w-[648px] mx-auto'>
           {items.map(({ question, answer }) => (
-            <AccordianItem question={question} answer={answer} />
+            <AccordianItem key={question} question={question} answer={answer} />
           ))}
         </div>
       </div>
