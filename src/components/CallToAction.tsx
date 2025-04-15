@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export const CallToAction = () => {
   return (
-    <div className="bg-black text-white py-[72px] sm:py-24 text-center">
+    <div className="bg-black text-white py-[72px] sm:py-24 text-center overflow-hidden">
       <div className="container max-w-xl relative">
-        <Image src={emojiStarImage} className='absolute -top-[120px] right-[calc(100%+24px)]' alt='' />
+        <Image src={emojiStarImage} className='absolute -top-[100px] right-[calc(100%+24px)]' alt='' />
         <Image src={helixImage} className='absolute top-6 left-[calc(100%+36px)]' alt='' />
         <h2 className="text-5xl font-bold tracking-tighter sm:text-6xl">Get instant access</h2>
         <p className="text-white/70 mt-5 ">Celebrate the joy of accomplishment with
