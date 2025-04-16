@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Task List",
   description: "Maintain you daily tasks easily.",
   icons:{
-    icon: '/logosaas1.png'
+    icon: '/favicon.ico'
   }
 };
 
@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+      </head>
       <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
     </html>
   );

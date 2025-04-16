@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 export const CallToAction = () => {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
